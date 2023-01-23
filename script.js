@@ -1,5 +1,6 @@
 // Btns
 let btnTheme = document.querySelector('#btnTheme');
+btnTheme.disabled = true;
 let btnAddNewTask = document.querySelector('#btnAddNewTask');
 let btnDeleteAll = document.querySelector('#btnDeleteAll');
 //-----
@@ -89,7 +90,9 @@ btnDeleteAll.onclick = () => {
 }
 btnTheme.onclick = () => {
 
-   let getBody = document.querySelector('body');
+   let getBody = document.querySelector('#body');
+   let getContainer = document.querySelector('#container');
    
    getBody.classList.toggle('active');
+   getContainer.classList.toggle('active');
 }
