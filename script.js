@@ -46,25 +46,27 @@ function creatorBtns(){
 
     let btnEditAdd = document.createElement('button');
     btnEditAdd.id = 'btnEditAdd';
-    btnEditAdd.innerHTML = '<.';
+    btnEditAdd.innerHTML = '<i class="fa-solid fa-pen-to-square"></i>';
     inf.appendChild(btnEditAdd);
     btnEditAdd.onclick = () => {
 
+        createTaskText.style.background = "rgb(180, 180, 180)";
         createTaskText.disabled = false;
     }
 
     let btnEditFinish = document.createElement('button');
     btnEditFinish.id = 'btnEditFinish';
-    btnEditFinish.innerHTML = '.>';
+    btnEditFinish.innerHTML = '<i class="fa-solid fa-check"></i>';
     inf.appendChild(btnEditFinish);
     btnEditFinish.onclick = () => {
 
+        createTaskText.style.background = "rgb(211, 211, 211)";
         createTaskText.disabled = true;
     }
 
     let createTaskBtn = document.createElement('button');
     createTaskBtn.id = 'newBtnTaskCreated';
-    createTaskBtn.innerHTML = 'X'
+    createTaskBtn.innerHTML = '<i class="fa-solid fa-delete-left"></i>';
     inf.appendChild(createTaskBtn);
     createTaskBtn.onclick = () => {
         counter--;

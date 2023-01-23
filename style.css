@@ -1,12 +1,20 @@
 body{
-    background: grey;
+    background: rgb(255, 255, 255);
 }
 body.active{
     background-color: purple;
 }
+h4{
+    text-align: center;
+    color: grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 #container{
 
-    background: white;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow:  20px 20px 56px #a8a8a8,
+             -20px -20px 56px #ffffff;
     width: 380px;
     height: 600px;
     margin: auto;
@@ -15,33 +23,112 @@ body.active{
     padding: 10px;
 }
 #newTask{
-    margin-top: 10px;
+    background: rgb(211, 211, 211);
+    margin-top: 2px;
+    padding: 12px;
+    width: 320px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14pt;
 }
 #inf{
-    background: red;
-    width: 320px;
+    background: rgba(255, 0, 0, 0);
+    width: 350px;
     height: 400px;
     margin: auto;
     margin-top: 10px;
     padding: 10px;
+    text-align: center;
 }
 #textTask{
-    background: BLUE;
-    width: 320px;
+    background: rgba(0, 0, 255, 0);
+    width: 350px;
     height: 50px;
     margin: auto;
     padding: 10px;
     text-align: center;
 }
 #btns{
-    background: green;
-    width: 320px;
+    background: rgba(0, 128, 0, 0);
+    width: 350px;
     height: 50px;
     padding: 10px;
     margin: auto;
     text-align: center;
+    margin-top: 5px;
 }
-button{
+#btnTheme, #btnAddNewTask, #btnDeleteAll{
     margin: auto;
+
+    background: linear-gradient(145deg, #bcbcbc, #e0e0e0);
+box-shadow:  32px 32px 100px #a1a1a1,
+             -32px -32px 100px #ffffff;
+    
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    font-size: 25pt;
+    margin-left: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#btnTheme:hover, #btnAddNewTask:hover, #btnDeleteAll:hover{
+
+    background: #1b1b1b;
+    color: white;
+    transform: scale(1.1);
+}
+
+#taskCreated{
+
+    background-color: rgb(211, 211, 211);
+    width: 320px;
+    height: 30px;
+    margin: auto;
+    margin-top: 35px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 20pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+}
+#btnEditAdd, #btnEditFinish, #newBtnTaskCreated{
+
+background: linear-gradient(145deg, #bcbcbc, #e0e0e0);
+box-shadow:  32px 32px 100px #a1a1a1,
+             -32px -32px 100px #ffffff;
+    border: 1px solid #6a5dfb00;
+    border-radius: 100%;
+    margin: auto;
+    outline: none;
+    margin-left: 20px;
+    width: 33px;
+    height: 33px;
+    transition: 0.3s;
     margin-top: 10px;
+    cursor: pointer;
+}
+#btnEditAdd:hover{
+
+    background: #fbe65d;
+    color: #b29d16;
+    transform: scale(1.2);
+}
+
+#btnEditFinish:hover{
+    background: #68fb5d;
+    color: #5cb216;
+    transform: scale(1.2);
+}
+#newBtnTaskCreated:hover{
+
+    background: #fb5d5d;
+    color: #b21616;
+    transform: scale(1.2);
 }
